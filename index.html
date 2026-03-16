@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Movie Search App</title>
+</head>
+
+<body>
+  <header>
+  <h1>Movie Explorer</h1>
+</header>
+
+<section id="searchSection">
+  <button onclick="showSearch()">Search</button>
+<button onclick="showFavorites()">Favorites ❤️</button>
+  <input type="text" id="movieInput">
+  <button>Search</button>
+</section>
+
+<section id="movieContainer"></section>
+
+<section id="pagination">
+  <button onclick="prevPage()">Previous</button>
+<span id="pageNumber">Page 1</span>
+<button onclick="nextPage()">Next</button>
+</section>
+
+<div id="movieModal">
+  
+<div class="modalContent">
+
+<span class="closeBtn" onclick="closeModal()">X</span>
+
+<div id="modalBody"></div>
+
+</div>
+  
+</body>
+</html>
